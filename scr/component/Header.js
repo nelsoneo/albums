@@ -3,7 +3,7 @@ import { StyleSheet, Text } from 'react-native';
 
 const Header = () => {
     return <Text>Albums</Text>
-} 
+}; 
 
 const styles = StyleSheet.create({});
 
