@@ -1,7 +1,11 @@
 import React from 'react';
-import { StyleSheet, Text } from 'react-native';
+import { StyleSheet, View, Text } from 'react-native';
 
-const Header = () => <Text style={styles.textHead}>Albums</Text>; 
+const Header = () => (
+        <View>
+            <Text style={styles.textHead}>Albums</Text>    
+        </View>
+    );
 
 const styles = StyleSheet.create({
     textHead: {
