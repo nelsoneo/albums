@@ -10,10 +10,8 @@ const Header = (props) => (
 const styles = StyleSheet.create({
     textHead: {
         fontSize: 30,
-        // paddingBottom: 40
     },
     viewStyle: {
-        // flex: 1,
         justifyContent: 'center',
         alignItems: 'center',
         paddingTop: 40,
