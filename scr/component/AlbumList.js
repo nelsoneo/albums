@@ -7,7 +7,7 @@ class AlbumList extends Component {
 state = { albums: [] };
 
     componentDidMount() {
-        axios.get('https://6897c08619c7.ngrok.io/Album')
+        axios.get('http://6878c0c71993.ngrok.io/Album')
         .then(response => this.setState({ albums: response.data }));
     }
 
