@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { View } from 'react-native';
+import { ScrollView } from 'react-native';
 import axios from 'axios';
 import AlbumDetail from './AlbumDetail';
 
@@ -7,7 +7,7 @@ class AlbumList extends Component {
 state = { albums: [] };
 
     componentDidMount() {
-        axios.get('http://6878c0c71993.ngrok.io/Album')
+        axios.get('http://4f8f60f1db68.ngrok.io/Album')
         .then(response => this.setState({ albums: response.data }));
     }
 
@@ -20,9 +20,9 @@ state = { albums: [] };
     render() {
       console.log(this.state);
         return (
-            <View>
+            <ScrollView>
                 {this.renderAlbums()}
-            </View>
+            </ScrollView>
         );
     }
 }

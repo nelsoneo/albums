@@ -7,7 +7,7 @@ import AlbumList from './scr/component/AlbumList';
 
 export default function App() {
   return (
-    <View>
+    <View style={{ flex: 1 }}>
       <Header headText={'Albums'} />
       <AlbumList />
     </View>
